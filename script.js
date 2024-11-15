@@ -1,10 +1,9 @@
-const input = document.getElementById('passwd');
-const button = document.getElementById('next-btn');
+function showPass() {
+  const x = document.getElementById('passwd')
 
-  input.addEventListener('input', () => {
-    if (input.value.trim() === '') {
-      button.disabled = true;
-    } else {
-      button.disabled = false;
-    }
-  });
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
