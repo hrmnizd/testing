@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="https://www.google.com/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+      import '@material/web/all.js';
+      import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+  
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+    <script src="script.js"></script>
+    <title>Gmail</title>
+</head>
+<body>
+    <section class="wrapper">
+        <div class="login">
+            <div class="login-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="48" width="48"><g fill="none" fill-rule="evenodd"><path d="M482.56 261.36c0-16.73-1.5-32.83-4.29-48.27H256v91.29h127.01c-5.47 29.5-22.1 54.49-47.09 71.23v59.21h76.27c44.63-41.09 70.37-101.59 70.37-173.46z" fill="#4285f4"/><path d="M256 492c63.72 0 117.14-21.13 156.19-57.18l-76.27-59.21c-21.13 14.16-48.17 22.53-79.92 22.53-61.47 0-113.49-41.51-132.05-97.3H45.1v61.15c38.83 77.13 118.64 130.01 210.9 130.01z" fill="#34a853"/><path d="M123.95 300.84c-4.72-14.16-7.4-29.29-7.4-44.84s2.68-30.68 7.4-44.84V150.01H45.1C29.12 181.87 20 217.92 20 256c0 38.08 9.12 74.13 25.1 105.99l78.85-61.15z" fill="#fbbc05"/><path d="M256 113.86c34.65 0 65.76 11.91 90.22 35.29l67.69-67.69C373.03 43.39 319.61 20 256 20c-92.25 0-172.07 52.89-210.9 130.01l78.85 61.15c18.56-55.78 70.59-97.3 132.05-97.3z" fill="#ea4335"/><path d="M20 20h472v472H20V20z"/></g></svg>
+            </div>
+            <div class="welcome-msg">
+                <h1>Hi Rebecca</h1>
+                <div class="email-info">
+                   <!-- <img src="https://lh3.googleusercontent.com/a-/ALV-UjVVJTT0yFpHiuG18pags6COw4_EYL-HmoFjKRiJoszgEg3J5iGA=s40-p" width="25px" height="25px"><p>raymora@nv.ccsd.net</p> -->
+                   <md-outlined-button><div class="raymora-btn"><img src="https://lh3.googleusercontent.com/a-/ALV-UjVVJTT0yFpHiuG18pags6COw4_EYL-HmoFjKRiJoszgEg3J5iGA=s40-p" width="25px" height="25px">raymora@nv.ccsd.net</div></md-outlined-button>
+                </div>
+            </div>
+            <div class="login-info">
+                    <div id="passwd-wrapper">
+                        <md-outlined-text-field label="Enter your password" value="" style="width: 100%;" type="password" required id="passwd"></md-outlined-text-field>
+                        <div class="show-pass-wrapper">
+                            <md-checkbox id="show-pass" touch-target="wrapper"></md-checkbox>
+                            <label for="show-pass">Show password</label>
+                        </div>
+                    </div>
+            </div>
+            <div class="submit-btn">
+                <md-filled-button type="submit">Next</md-filled-button>
+            </div>
+        </div>
+        <div class="misc">
+            <div class="misc-lang">
+                <button class="misc-btn">English (United States)</button>
+            </div>
+            <div class="misc-btns">
+                <button class="misc-btn">Help</button>
+                <button class="misc-btn">Privacy</button>
+                <button class="misc-btn">Terms</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
