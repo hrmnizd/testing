@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+body {
+    max-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+
+    grid-template-areas: "logo account";
+}
+
+.buffer {
+    width: 100%;
+    height: 5vh;
+}
+
+.section {
+    width: 100%;
+    height: 85vh;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    grid-area: logo;
+    justify-self: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content {
+    border: 1px solid rgba(128, 128, 128, 0.329);
+    width: 600px;
+    height: min-content;
+    border-radius: 10px;
+
+    padding: 20px;
+}
+
+.device h2 {
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.pfp-email {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.pfp-email img {
+    margin-right: 5px;
+    border-radius: 100%;
+}
+
+.risk {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.photo {
+    width: 100%;
+    margin: 40px 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.photo h1 {
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.linux-machine {
+    width: 72px;
+    height: 72px;
+    background-image: url("../images/devices_realistic_72-b9bd1ca60228ef0457a37afb84e72bdd\ \(1\).png");
+    background-position-x: 0px;
+    background-position-y: -1165px;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-size: 72px 1532px;
+    background-attachment: scroll;
+}
+
+.btns {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.329);
+    border-radius: 5px;
+    padding: 5px;
+    color: red;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:nth-child(2) {
+    color: blue;
+}
+
+.btn:hover {
+    background-color: rgba(214, 214, 255, 0.308);
+}
