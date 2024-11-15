@@ -1,10 +1,10 @@
-const passwordInput = document.getElementById('passwd');
-const showPasswordCheckbox = document.getElementById('show-pass');
+const input = document.getElementById('passwd');
+const button = document.getElementById('next-btn');
 
-showPasswordCheckbox.addEventListener('change', () => {
-    if (showPasswordCheckbox.checked) {
-        passwordInput.type = 'text';
+  input.addEventListener('input', () => {
+    if (input.value.trim() === '') {
+      button.disabled = true;
     } else {
-        passwordInput.type = 'password';
+      button.disabled = false;
     }
-});
+  });
