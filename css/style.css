@@ -25,6 +25,15 @@ button:focus {
     --md-sys-color-on-primary: #204683;
 
     --md-outlined-button-label-text-font: system-ui;
+    --md-sys-color-on-surface: white;
+}
+
+md-outlined-text-field {
+    transition: md-sys-color-primary 0.1s ease;
+}
+
+md-outlined-text-field:hover {
+    --md-sys-color-on-surface: #747775;
 }
 
 body {
